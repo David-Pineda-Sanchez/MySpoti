@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Newsletter de Anuel AA</title>
+</head>
+<body>
+
+  <h1>Suscríbete al boletín</h1>
+
+  <nav>
+    <a href="index.html">Inicio</a> |
+    <a href="discografia.html">Discografía</a> |
+    <a href="album1.html">Real Hasta La Muerte</a> |
+    <a href="album2.html">Emmanuel</a> |
+    <a href="album3.html">Los Dioses</a> |
+    <a href="newsletter.html">Newsletter</a>
+  </nav>
+
+  <hr>
+
+  <form action="#" method="post" novalidate>
+    <div>
+      <label for="nombre">Nombre</label><br>
+      <input
+        id="nombre"
+        name="nombre"
+        type="text"
+        required
+        autocomplete="name"
+        placeholder="Tu nombre"
+        inputmode="text"
+        aria-required="true"
+      >
+    </div>
+    <br>
+
+    <div>
+      <label for="email">Correo electrónico</label><br>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        required
+        autocomplete="email"
+        placeholder="tu@ejemplo.com"
+        aria-required="true"
+      >
+    </div>
+    <br>
+
+    <div>
+      <label for="edad">Edad</label><br>
+      <input
+        id="edad"
+        name="edad"
+        type="number"
+        min="0"
+        max="120"
+        inputmode="numeric"
+        placeholder="18"
+      >
+    </div>
+    <br>
+
+    <div>
+      <label for="pais">País</label><br>
+      <select id="pais" name="pais" required>
+        <option value="">--Elige--</option>
+        <option value="pr">Puerto Rico</option>
+        <option value="es">España</option>
+        <option value="mx">México</option>
+        <option value="mx">Colombia</option>
+        <option value="mx">Mozambique</option>
+      </select>
+    </div>
+    <br>
+
+    <fieldset>
+      <legend>¿Qué te interesa?</legend>
+
+      <div>
+        <input id="interes-musica" name="interes[]" type="checkbox" value="musica">
+        <label for="interes-musica">Música nueva</label>
+      </div>
+
+      <div>
+        <input id="interes-conciertos" name="interes[]" type="checkbox" value="conciertos">
+        <label for="interes-conciertos">Conciertos</label>
+      </div>
+
+      <div>
+        <input id="interes-merch" name="interes[]" type="checkbox" value="merch">
+        <label for="interes-merch">Merchandising</label>
+      </div>
+    </fieldset>
+    <br>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
